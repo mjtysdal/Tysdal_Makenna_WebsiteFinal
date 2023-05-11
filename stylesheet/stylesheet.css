@@ -1,0 +1,135 @@
+img {
+    padding-top: 1%;
+    padding-left: 1%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    margin-top: 2%;
+    margin-right: 0;
+}
+li a {
+    display: block;
+    color: #983d26;
+    text-align: center;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: "fino-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150%;
+}
+li a:hover:not(.active) {
+    color: #e0a194;
+}
+.bodyfonts {
+    font-family: 'Arial Narrow';
+}
+.bg {
+    background-image: url(Kasama/Main\ Header\ Picture.jpg);
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    font-family: "fino-sans", sans-serif;
+    font-size: 150%;
+    line-height: 50%;
+ }
+.text-block {
+    position: absolute;
+    top: 125px;
+    left: 15px;
+    background-color: #e0a194;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 80%;
+}
+.container2 {
+    position: center;
+    font-family: "fino-sans", sans-serif;
+    color:#983d26;
+    text-align: center;
+    font-size: 300%;
+}
+.list2 {
+    float: none;
+    text-align: center;
+    float: center;
+    display: block;
+    color: #983d26;
+    text-align: center;
+    text-decoration: none;
+    font-family: "fino-sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 150%;
+}
+ul.list2 {
+    display: flex;
+    gap: 5px;
+}
+.img-round {
+    border-radius: 50%;
+}
+.container3 {
+    background-color: #983d26;
+    color: white;
+    padding: 50px;
+    font-family: "fino-sans", sans-serif;
+    text-align: left;
+    font-size: 250%;
+}
+.flex-container {
+    display: flex;
+    gap: 25px;
+}
+.body {
+    font-size: x-large;
+    line-height: 40px;
+}
+.fade--in {
+    opacity: 0;
+}
+.fade--in.active {
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.slide--in {
+    opacity: 0;
+}
+.slide--in.active {
+    animation-name: slide-in;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
